@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --very-light-pink: #c7c7c7;
+            --white: #fff;
+            --text-input-field: #f7f7f7;
+            --black: #000;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .main-container{
+            width: 90%;
+            margin: auto;
+        }
+        .cards-container{
+            margin: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+            gap: 20px;
+            justify-content: center;
+        }
+        .card{
+            width: 240px;
+        }
+        .product-image{
+            margin-bottom: 8px;
+        }
+        .product-image img{
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .product-info{
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-price-name{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .price{
+            font-weight: bold;
+        }
+        .article{
+            color: var(--very-light-pink);
+        }
+        .add-to-cart{
+            display: flex;
+            align-items: center;
+            background: var(--hospital-green);
+            padding: 16px;
+            border-radius: 50%;
+        }
+        .add-to-cart i{
+            font-size: 18px;
+        }
+        @media (max-width:576px){
+            .cards-container{
+                grid-template-columns: repeat(auto-fill, 140px);
+            }
+            .card{
+                width: 140px;
+            }
+            .product-image img{
+                height: 140px;
+            }
+            .add-to-cart{
+                padding: 14px;
+            }
+            .add-to-cart i{
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="card">
+                <figure class="product-image">
+                    <img src="https://images.pexels.com/photos/2263816/pexels-photo-2263816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="game boy">
+                </figure>
+                <div class="product-info">
+                    <div class="product-price-name">
+                        <p class="price">$45,00</p>
+                        <p class="article">Game boy</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fas fa-cart-plus my-cart-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="product-image">
+                    <img src="https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=600" alt="controller xbox">
+                </figure>
+                <div class="product-info">
+                    <div class="product-price-name">
+                        <p class="price">$35,00</p>
+                        <p class="article">Controller</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="product-image">
+                    <img src="https://images.pexels.com/photos/2263816/pexels-photo-2263816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="game boy">
+                </figure>
+                <div class="product-info">
+                    <div class="product-price-name">
+                        <p class="price">$45,00</p>
+                        <p class="article">Game boy</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="product-image">
+                    <img src="https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=600" alt="controller xbox">
+                </figure>
+                <div class="product-info">
+                    <div class="product-price-name">
+                        <p class="price">$35,00</p>
+                        <p class="article">Controller</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="product-image">
+                    <img src="https://images.pexels.com/photos/2263816/pexels-photo-2263816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="game boy">
+                </figure>
+                <div class="product-info">
+                    <div class="product-price-name">
+                        <p class="price">$45,00</p>
+                        <p class="article">Game boy</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="product-image">
+                    <img src="https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=600" alt="controller xbox">
+                </figure>
+                <div class="product-info">
+                    <div class="product-price-name">
+                        <p class="price">$35,00</p>
+                        <p class="article">Controller</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="product-image">
+                    <img src="https://images.pexels.com/photos/2263816/pexels-photo-2263816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="game boy">
+                </figure>
+                <div class="product-info">
+                    <div class="product-price-name">
+                        <p class="price">$45,00</p>
+                        <p class="article">Game boy</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="product-image">
+                    <img src="https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=600" alt="controller xbox">
+                </figure>
+                <div class="product-info">
+                    <div class="product-price-name">
+                        <p class="price">$35,00</p>
+                        <p class="article">Controller</p>
+                    </div>
+                    <div class="add-to-cart">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/eea17aafbe.js" crossorigin="anonymous"></script>
+</body>
+</html>
