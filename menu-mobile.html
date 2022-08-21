@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --very-light-pink: #c7c7c7;
+            --white: #fff;
+            --text-input-field: #f7f7f7;
+            --black: #000;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .menu-mobile{
+            position: absolute;
+            left: 20px;
+        }
+        .menu-mobile ul{
+            list-style: none;
+            margin: 20px 0;
+        }
+        .menu-mobile ul li{
+            padding: 20px 20px 0 20px;
+            font-weight: bold;
+        }
+        .menu-mobile ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--black);
+        }
+        .menu-mobile ul li .mail{
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .menu-mobile ul li .sign-out{
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--hospital-green);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-mobile">
+        <ul>
+            <li>CATEGORIES</li>
+            <li>
+                <a href="#">All</a>
+            </li>
+            <li>
+                <a href="#">Clothes</a>
+            </li>
+            <li>
+                <a href="#">Electronics</a>
+            </li>
+            <li>
+                <a href="#">Furnitures</a>
+            </li>
+            <li>
+                <a href="#">Toys</a>
+            </li>
+            <li>
+                <a href="#">Others</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">My orders</a>
+            </li>
+            <li>
+                <a href="#">My account</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#" class="email">camilayooko@gmail.com</a>
+            </li>
+            <li>
+                <a href="#" class="sign-out">Sign out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
