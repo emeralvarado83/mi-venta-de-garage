@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --very-light-pink: #c7c7c7;
+            --white: #fff;
+            --text-input-field: #f7f7f7;
+            --black: #000;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .menu-small-desktop{
+            width: 140px;
+            height: auto;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 8px;
+            position: absolute;
+            right: 0;
+        }
+        .menu-small-desktop ul{
+            list-style: none;
+            text-align: right;
+        }
+        .menu-small-desktop ul li{
+            padding: 20px;
+        }
+        .menu-small-desktop ul li:nth-child(3){
+            border-top: 1px solid var(--very-light-pink);
+            font-weight: normal;
+        }
+        .menu-small-desktop ul li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--black);
+        }
+        .menu-small-desktop ul li .sign-out{
+            color: var(--hospital-green);
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-small-desktop">
+        <ul>
+            <li>
+                <a href="#">My orders</a>
+            </li>
+            <li>
+                <a href="#">My account</a>
+            </li>
+            <li>
+                <a href="#" class="sign-out">Sign out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
