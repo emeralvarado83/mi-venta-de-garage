@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --very-light-pink: #c7c7c7;
+            --white: #fff;
+            --text-input-field: #f7f7f7;
+            --black: #000;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .my-order{
+            width: 320px;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .my-order-container .title{
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .my-order-content{
+            display: flex;
+            justify-content: space-between;
+            background: var(--text-input-field);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .my-order-content .info{
+            display: flex;
+            flex-direction: column;
+        }
+        .my-order-content .info span{
+            color: var(--very-light-pink);
+        }
+        .my-order-content .info span:first-child{
+            font-weight: bold;
+            color: var(--black);
+        }
+        .my-order-content .total{
+            display: flex;
+            align-items: center;
+        }
+        .my-order-content .total span{
+            font-weight: bold;
+        }
+        .my-orders-content .product{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .my-orders-content .product .info{
+            width: 200px;
+            display: flex;
+            align-items: center;
+        }
+        .my-orders-content .product .info img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .my-orders-content .product .info span{
+            display: block;
+            margin-left: 10px;
+            color: var(--very-light-pink);
+        }
+        .my-orders-content .product .price{
+            display: flex;
+            align-items: center;
+        }
+        .my-orders-content .product .price span{
+            display: block;
+            text-align: right;
+            font-weight: bold;
+        }
+        @media (max-width:576px){
+            .my-order{
+                width: 100%;
+            }
+            .my-order .title{
+                display: none;
+            }
+            .my-order-container{
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">My order</h1>
+            <div class="my-order-content">
+                <div class="info">
+                    <span>21.08.2022</span>
+                    <span>4 articles</span>
+                </div>
+                <div class="total">
+                    <span>$160.00</span>
+                </div>
+            </div>
+            <div class="my-orders-content">
+                <div class="product">
+                    <div class="info">
+                        <img src="https://images.pexels.com/photos/2263816/pexels-photo-2263816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="game boy">
+                        <span>Game boy</span>
+                    </div>
+                    <div class="price">
+                        <span>$45.00</span>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="info">
+                        <img src="https://images.pexels.com/photos/1298601/pexels-photo-1298601.jpeg?auto=compress&cs=tinysrgb&w=600" alt="controller xbox">
+                        <span>Controller</span>
+                    </div>
+                    <div class="price">
+                        <span>$35.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
