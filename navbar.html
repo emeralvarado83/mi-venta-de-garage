@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --very-light-pink: #c7c7c7;
+            --white: #fff;
+            --text-input-field: #f7f7f7;
+            --black: #000;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .menu{
+            display: none;
+        }
+        .navbar-left ul,
+        .navbar-right ul{
+            list-style: none;
+            display: flex;
+        }
+        .navbar-left ul .logo{
+            width: 100px;
+            margin-right: 12px;
+        }
+        .navbar-left ul li a{
+            text-decoration: none;
+            color: var(--very-light-pink);
+            display: inline-block;
+            padding: 4px 8px;
+            border: 1px solid transparent;
+            border-radius: 8px;
+        }
+        .navbar-left ul li a:hover{
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
+        }
+        .navbar-right ul li{
+            padding: 4px 0;
+        }
+        .navbar-right ul .email-user{
+            margin-right: 12px;
+        }
+        .navbar-right ul .shopping-cart{
+            position: relative;
+        }
+        .navbar-right ul .shopping-cart i{
+            font-size: 18px;
+        }
+        .navbar-right ul li .cant{
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--hospital-green);
+            border-radius: 50%;
+            color: var(--white);
+            width: 18px;
+            font-size: 14px;
+            text-align: center;
+        }
+        @media (max-width: 768px){
+            .menu{
+            display: block;
+            }
+            .navbar-left ul li,
+            .navbar-right ul .email-user{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./assets/icons/icon_menu.svg" alt="" class="menu">
+        <div class="navbar-left">
+            <ul>
+                <img src="./assets/logos/logo_yard_sale.svg" alt="" class="logo">    
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Clothes</a>
+                </li>
+                <li>
+                    <a href="">Electronics</a>
+                </li>
+                <li>
+                    <a href="">Furniture</a>
+                </li>
+                <li>
+                    <a href="">Toys</a>
+                </li>
+                <li>
+                    <a href="">Others</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="email-user">camilayokoo@gmail.com</li>
+                <li class="shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cant">2</div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/eea17aafbe.js" crossorigin="anonymous"></script>
+</body>
+</html>
