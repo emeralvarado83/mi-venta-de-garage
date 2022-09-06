@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --very-light-pink: #c7c7c7;
+            --white: #fff;
+            --text-input-field: #f7f7f7;
+            --black: #000;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Quicksand', sans-serif;
+        }
+        .product-detail{
+            width: 320px;
+            position: absolute;
+            right: 0;
+        }
+        .product-detail img:first-child{
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            cursor: pointer;
+        }
+        .product-detail .thumb{
+            width: 100%;
+            border-radius: 0 0 20px 20px;
+            object-fit: cover;
+        }
+        .product-detail-info .product-price{
+            font-weight: bold;
+            color: var(--black);
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        .product-detail-info .product-name{
+            color: var(--very-light-pink);
+            margin-bottom: 16px;
+        }
+        .product-detail-info .description{
+            color: var(--very-light-pink);
+            margin-bottom: 32px;
+        }
+        .input-button{
+            display: block;
+            padding: 20px 0;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--hospital-green);
+            color: #fff;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        @media (max-width: 576px){
+            .product-detail{
+                width: 90%;
+                margin: auto;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-detail">
+        <img src="./assets/icons/icon_close.png" alt="close">
+        <img src="https://images.pexels.com/photos/2263816/pexels-photo-2263816.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Game boy" class="thumb">
+        <div class="product-detail-info">
+            <p class="product-price">$35,00</p>
+            <p class="product-name">Game boy</p>
+            <p class="description">
+                Es una videoconsola portátil desarrollada y comercializada por Nintendo, lanzada por primera vez en Japón y América del Norte en 1989, y en Europa un año después​.
+            </p>
+        </div>
+        <button class="input-button"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+    </div>
+    <script src="https://kit.fontawesome.com/eea17aafbe.js" crossorigin="anonymous"></script>
+</body>
+</html>
