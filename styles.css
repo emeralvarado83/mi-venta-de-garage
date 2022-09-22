@@ -53,6 +53,7 @@ nav{
 }
 .navbar-right ul .shopping-cart{
     position: relative;
+    cursor: pointer;
 }
 .navbar-right ul .shopping-cart i{
     font-size: 18px;
@@ -106,6 +107,7 @@ nav{
     position: absolute;
     left: 0;
     top: 54px;
+    background: var(--white);
 }
 .menu-mobile ul{
     list-style: none;
@@ -130,6 +132,92 @@ nav{
     color: var(--hospital-green);
 }
 
+.shopping-cart-details{
+    width: 320px;
+    position: absolute;
+    right: 0;
+}
+
+.my-order-container .title{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.my-order-content{
+    display: flex;
+    justify-content: space-between;
+    background: var(--text-input-field);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.my-order-content .info{
+    display: flex;
+    flex-direction: column;
+}
+.my-order-content .info span{
+    color: var(--very-light-pink);
+}
+.my-order-content .info span:first-child{
+    font-weight: bold;
+    color: var(--black);
+}
+.my-order-content .total{
+    display: flex;
+    align-items: center;
+}
+.my-order-content .total span{
+    font-weight: bold;
+}
+.my-orders-content .product{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.my-orders-content .product .info{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.my-orders-content .product .info img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.my-orders-content .product .info span{
+    display: block;
+    margin-left: 10px;
+    color: var(--very-light-pink);
+}
+.my-orders-content .product .price{
+    display: flex;
+    align-items: center;
+}
+.my-orders-content .product .price span{
+    display: block;
+    text-align: right;
+    font-weight: bold;
+}
+.my-orders-content .product .price .close{
+    margin-left: 8px;
+}
+.input-button{
+    display: block;
+    padding: 20px 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--hospital-green);
+    color: #fff;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 @media (max-width: 768px){
     .menu{
     display: block;
@@ -140,6 +228,14 @@ nav{
     }
     .menu-small-desktop{
         display: none;
+    }
+    .menu-mobile{
+        width: 100%;
+    }
+    .shopping-cart-details{
+        width: 90%;
+        margin: auto;
+        position: static;
     }
 }
 
