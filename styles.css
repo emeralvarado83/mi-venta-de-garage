@@ -78,6 +78,7 @@ nav{
     position: absolute;
     right: 50px;
     top: 54px;
+    background: var(--white);
 }
 .menu-small-desktop ul{
     list-style: none;
@@ -136,6 +137,7 @@ nav{
     width: 320px;
     position: absolute;
     right: 0;
+    background: var(--white);
 }
 
 .my-order-container .title{
@@ -230,7 +232,7 @@ nav{
         display: none;
     }
     .menu-mobile{
-        width: 100%;
+        width: 70%;
     }
     .shopping-cart-details{
         width: 90%;
